@@ -41,7 +41,7 @@ const Navbar = () => {
 
    <div className='group relative'>
   <div className='cursor-pointer flex items-center'>
-    <img className='w-5' src={assets.profile_icon} alt="" />
+    <Link to='/login'><img className='w-5' src={assets.profile_icon} alt="" /></Link>
   </div>
 
   {/* Dropdown */}
