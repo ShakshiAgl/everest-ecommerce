@@ -30,8 +30,8 @@ function App() {
         <Route path='/product/:productId' element={<Product/>} />
         <Route path='/cart' element={<Cart/>} />
         <Route path='/login' element={<Login/>} />
-        <Route path='/login' element={<PlaceOrder/>} />
-        <Route path='/login' element={<Orders/>} />
+        <Route path='/place-order' element={<PlaceOrder/>} />
+        <Route path='/orders' element={<Orders/>} />
       </Routes>
       <Footer />
     </div>
