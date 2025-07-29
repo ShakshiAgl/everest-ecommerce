@@ -1,10 +1,13 @@
 import { Routes, Route } from 'react-router-dom';
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css'; 
+
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Collection from './pages/Collection';
 import Contact from './pages/Contact';
-import  About  from './pages/About';
+import About from './pages/About';
 import Product from './pages/Product';
 import Cart from './pages/Cart';
 import Login from './pages/Login';
@@ -16,26 +19,32 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
+  // 👇 Initialize AOS once when App mounts
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
-  
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
       <ToastContainer />
       <Navbar />
       <SearchBar />
       <Routes>
-        <Route path = '/' element={<Home/>}/>
-        <Route path='/collection' element={<Collection/>} />
-        <Route path='/about' element={<About/>} />
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/product/:productId' element={<Product/>} />
-        <Route path='/cart' element={<Cart/>} />
-        <Route path='/login' element={<Login/>} />
-        <Route path='/place-order' element={<PlaceOrder/>} />
-        <Route path='/orders' element={<Orders/>} />
+        <Route path='/' element={<Home />} />
+        <Route path='/collection' element={<Collection />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/product/:productId' element={<Product />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/place-order' element={<PlaceOrder />} />
+        <Route path='/orders' element={<Orders />} />
       </Routes>
       <Footer />
     </div>
-
   );
 }
 
