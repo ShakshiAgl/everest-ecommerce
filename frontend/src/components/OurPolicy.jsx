@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { assets } from '@/assets/frontend_assets/assets';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 
 const OurPolicy = () => {
+
+  useEffect(()=>{
+    Aos.init({duration: 1000})
+  },[])
+
   return (
     <div className='flex flex-col sm:flex-row justify-around items-center gap-12 sm:gap-4 text-center py-20 px-4 text-xs sm:text-sm md:text-base text-gray-700'>
       <div
         className='bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6 w-full sm:w-60'
         data-aos="fade-left"
-        data-aos-delay="100"
+        data-aos-duration="1000"
       >
         <img src={assets.exchange_icon} className='w-12 m-auto mb-5' alt="Exchange Icon" />
         <p className='font-semibold mb-1'>Easy Exchange Policy</p>

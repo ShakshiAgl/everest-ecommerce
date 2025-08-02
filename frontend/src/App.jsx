@@ -1,7 +1,7 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom'; // ⬅️ add useLocation
 import React, { useEffect } from 'react';
 import Aos from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -19,13 +19,15 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  // 👇 Initialize AOS once when App mounts
+  const location = useLocation(); // ⬅️ get current route
+
   useEffect(() => {
     Aos.init({
       duration: 1000,
-      once: true,
+      once: false, // set false if you want animation every scroll
     });
-  }, []);
+    Aos.refresh(); // ⬅️ refresh AOS on every route change
+  }, [location.pathname]); // ⬅️ trigger useEffect on route change
 
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
