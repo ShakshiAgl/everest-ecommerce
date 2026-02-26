@@ -43,7 +43,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div>
             <Link to="/" className="text-3xl font-[Playfair_Display] text-[#8B1E3F] tracking-wide">
-              Maa Kripa Trends
+              Maa Kripa Trendz
             </Link>
 
             <p className="mt-5 text-gray-600 text-sm leading-relaxed">
@@ -90,7 +90,7 @@ const Footer = () => {
                 <FaPhoneAlt className="text-[#8B1E3F]" /> +91 98765 43210
               </li>
               <li className="flex items-center gap-3">
-                <FaEnvelope className="text-[#8B1E3F]" /> contact@maakripatrends.com
+                <FaEnvelope className="text-[#8B1E3F]" /> contact@maakripaTrendz.com
               </li>
               <li className="flex items-center gap-3">
                 <FaMapMarkerAlt className="text-[#8B1E3F]" /> Surat, Gujarat, India
@@ -102,19 +102,15 @@ const Footer = () => {
 
         {/* ================= TRUST BADGES ================= */}
         <div className="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center text-sm text-gray-600">
-
           <div className="p-6 bg-white rounded-2xl shadow-sm">
             🇮🇳 Serving 1000+ Retailers Across India
           </div>
-
           <div className="p-6 bg-white rounded-2xl shadow-sm">
             🔒 Secure Payments & Trusted Manufacturing
           </div>
-
           <div className="p-6 bg-white rounded-2xl shadow-sm">
             🚚 Fast Dispatch & Bulk Order Support
           </div>
-
         </div>
 
         {/* ================= PAYMENT ICONS ================= */}
@@ -127,9 +123,22 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* ================= ABOUT DEVELOPER ================= */}
+<div className="mt-6 text-center text-gray-500 text-sm italic">
+  Website developed with ❤️ by{' '}
+  <a 
+    href="https://www.linkedin.com/in/shakshi-agrawal/" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="hover:text-[#8B1E3F] transition underline"
+  >
+    Shakshi Agarwal
+  </a>{' '}
+</div>
+
         {/* ================= COPYRIGHT ================= */}
-        <div className="mt-14 border-t border-gray-300 pt-6 text-center text-gray-500 text-sm">
-          © 2026 Maa Kripa Trends Pvt. Ltd. All Rights Reserved.
+        <div className="mt-6 border-t border-gray-300 pt-6 text-center text-gray-500 text-sm">
+          © 2026 Maa Kripa Trendz Pvt. Ltd. All Rights Reserved.
         </div>
 
       </div>

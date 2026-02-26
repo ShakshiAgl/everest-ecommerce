@@ -22,9 +22,9 @@ const Navbar = () => {
     MKT
   </span>
 
-  {/* Maa Kripa Trends (On Hover) */}
+  {/* Maa Kripa Trendz (On Hover) */}
   <span className="absolute top-1 font-royal text-2xl tracking-wider text-[#8B1E3F] opacity-0 translate-y-4 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 whitespace-nowrap">
-    Maa Kripa Trends
+    Maa Kripa Trendz
   </span>
 
   {/* Subtitle */}

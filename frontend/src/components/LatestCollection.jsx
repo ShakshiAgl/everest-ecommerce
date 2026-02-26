@@ -22,7 +22,7 @@ const LatestCollection = () => {
       <div className="text-center max-w-3xl mx-auto" data-aos="fade-up">
 
         <h2 className="text-3xl md:text-4xl font-semibold tracking-wide text-gray-800">
-          Maa Kripa Trends
+          Maa Kripa Trendz
         </h2>
 
         <div className="w-24 h-[2px] bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto my-4"></div>

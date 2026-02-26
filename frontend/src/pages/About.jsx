@@ -57,7 +57,7 @@ const About = () => {
       {/* ================= HERO ================= */}
       <div className="py-16 text-center relative zari-bg">
         <h1 className="text-5xl font-serif shimmer mb-6">
-          Maa Kripa Trends
+          Maa Kripa Trendz
         </h1>
         <div className="w-40 gold-divider mx-auto mb-6"></div>
         <p className="max-w-3xl mx-auto text-gray-600">
@@ -207,7 +207,7 @@ const About = () => {
       {
         title: "Fabric Selection",
         desc: "Premium silk and handpicked fabrics sourced from trusted artisans.",
-        img: "/images/fabric.jpg"
+        img: assets.fabric_img 
       },
       {
         title: "Design & Pattern Making",
@@ -373,7 +373,7 @@ const About = () => {
 
         <div className="max-w-3xl mx-auto">
           <p className="italic">
-            “At Maa Kripa Trends, we believe every saree carries a story.
+            “At Maa Kripa Trendz, we believe every saree carries a story.
             Our mission is to preserve Indian heritage while embracing innovation.”
           </p>
           <p className="mt-6 text-lg font-semibold">

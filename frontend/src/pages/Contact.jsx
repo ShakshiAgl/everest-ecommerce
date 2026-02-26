@@ -26,15 +26,15 @@ const Contact = () => {
           <h3 className="text-xl font-semibold mb-4 text-[#8B1E3F]">📍 Address</h3>
           <p className="text-sm text-gray-600 leading-relaxed">
             Maakripa Trendz Pvt. Ltd. <br />
-            Textile Hub, Surat, Gujarat, India
+            Millennium Textile Market 2, Surat, Gujarat, India
           </p>
         </div>
 
         <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-500">
           <h3 className="text-xl font-semibold mb-4 text-[#8B1E3F]">📞 Phone</h3>
           <p className="text-sm text-gray-600">
-            +91 98765 43210 <br />
-            +91 91234 56789
+            +91 63549 69798 <br />
+            +91 93778 82809
           </p>
         </div>
 
@@ -128,17 +128,19 @@ const Contact = () => {
           Our Location
         </h2>
 
-        <div className="rounded-3xl overflow-hidden shadow-2xl">
-          <iframe
-            title="map"
-            src="https://www.google.com/maps/embed?pb=!1m18..."
-            width="100%"
-            height="400"
-            allowFullScreen=""
-            loading="lazy"
-            className="border-0"
-          ></iframe>
-        </div>
+       <div className="rounded-3xl overflow-hidden shadow-2xl">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d522.1119682554851!2d72.84653008160925!3d21.184943060416288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04fe04a9e943f%3A0x42a1258fcabe8354!2sMAAKRIPA%20TRENDZ%20PVT.%20LTD!5e0!3m2!1sen!2sin!4v1772100762279!5m2!1sen!2sin"
+          width="100%"
+          height="400"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="border-0"
+          title="MAAKRIPA TRENDZ Location"
+        ></iframe>
+      </div>
 
       </div>
 

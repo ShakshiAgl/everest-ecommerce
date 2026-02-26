@@ -54,7 +54,6 @@ import p_img50 from './p_img50.png'
 import p_img51 from './p_img51.png'
 import p_img52 from './p_img52.png'
 
-
 import logo from './logo2.jpeg'
 import hero_img from './hero_img.png'
 import cart_icon from './cart_icon.png'
@@ -79,6 +78,7 @@ import awards2 from './awards2.png'
 import about from './about.png'
 import kari_work_img from './kari_work_img.png'
 import india_map from './india_map.png'
+import fabric_img from './fabric_img.png'
 
 export const assets = {
     logo,
@@ -103,7 +103,8 @@ export const assets = {
     awards2,
     about,
     kari_work_img,
-    india_map
+    india_map,
+    fabric_img
 }
 
 // export const products = [
