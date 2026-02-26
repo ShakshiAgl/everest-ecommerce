@@ -77,6 +77,8 @@ import cross_icon from './cross_icon.png'
 import awards1 from './awards1.png'
 import awards2 from './awards2.png'
 import about from './about.png'
+import kari_work_img from './kari_work_img.png'
+import india_map from './india_map.png'
 
 export const assets = {
     logo,
@@ -99,7 +101,9 @@ export const assets = {
     cross_icon,
     awards1,
     awards2,
-    about
+    about,
+    kari_work_img,
+    india_map
 }
 
 // export const products = [

@@ -119,25 +119,55 @@ const About = () => {
         </div>
       </section>
 
-      {/* ================= TIMELINE ================= */}
-      <section className="py-20 px-6 md:px-20 bg-[#FDF8F3] text-center">
-        <h2 className="text-4xl font-serif shimmer mb-10">Our Journey</h2>
-        <div className="w-32 gold-divider mx-auto mb-16"></div>
+     {/* ================= ELEGANT TIMELINE ================= */}
+<section className="relative py-24 px-6 md:px-20 bg-gradient-to-b from-[#FDF8F3] via-[#F9EFE7] to-[#FDF8F3] overflow-hidden">
 
-        <div className="grid md:grid-cols-5 gap-8 text-sm">
-          {[
-            "2005 – Founded",
-            "2010 – 200+ Retailers",
-            "2015 – Designer Collection Launch",
-            "2020 – 1000+ Sellers Network",
-            "2024 – Award Winning Brand"
-          ].map((item, i) => (
-            <div key={i} className="p-6 bg-white rounded-xl gold-frame">
-              {item}
-            </div>
-          ))}
+  {/* Heading */}
+  <div className="text-center mb-20">
+    <h2 className="text-5xl font-serif text-[#7A1C2E] tracking-wide relative inline-block">
+      Our Journey
+      <span className="block w-24 h-[2px] bg-gradient-to-r from-transparent via-[#C6A75E] to-transparent mx-auto mt-4"></span>
+    </h2>
+    <p className="text-gray-600 mt-4 max-w-xl mx-auto italic">
+      A legacy woven with tradition, passion & timeless elegance.
+    </p>
+  </div>
+
+  {/* Timeline Line */}
+  <div className="relative max-w-5xl mx-auto">
+    <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-[#C6A75E] to-[#7A1C2E] h-full"></div>
+
+    {[
+      { year: "2005", text: "Founded with a vision to celebrate Indian craftsmanship." },
+      { year: "2010", text: "Expanded to 200+ trusted retailers across India." },
+      { year: "2015", text: "Launched exclusive Designer Saree Collection." },
+      { year: "2020", text: "Built a strong network of 1000+ sellers." },
+      { year: "2024", text: "Recognized as an Award-Winning Saree Brand." }
+    ].map((item, index) => (
+      <div
+        key={index}
+        className={`relative mb-16 flex ${
+          index % 2 === 0 ? "justify-start" : "justify-end"
+        }`}
+      >
+        <div className="w-full md:w-5/12 bg-white shadow-xl rounded-2xl p-8 border border-[#F1E4D8] hover:scale-105 transition duration-500">
+
+          {/* Year Badge */}
+          <div className="text-[#7A1C2E] text-3xl font-serif mb-4">
+            {item.year}
+          </div>
+
+          <p className="text-gray-600 leading-relaxed">
+            {item.text}
+          </p>
         </div>
-      </section>
+
+        {/* Circle on line */}
+        <span className="absolute left-1/2 transform -translate-x-1/2 w-5 h-5 bg-[#C6A75E] rounded-full border-4 border-white shadow-md"></span>
+      </div>
+    ))}
+  </div>
+</section>
 
       {/* ================= ART & HERITAGE ================= */}
       <section className="py-20 px-6 md:px-20 bg-gradient-to-b from-white to-[#F8F1EA] text-center">
@@ -160,46 +190,141 @@ const About = () => {
         </div>
       </section>
 
-      {/* ================= MANUFACTURING PROCESS ================= */}
-      <section className="py-20 px-6 md:px-20 bg-white text-center">
-        <h2 className="text-4xl font-serif shimmer mb-10">Our Manufacturing Process</h2>
-        <div className="w-32 gold-divider mx-auto mb-16"></div>
+     {/* ================= ROYAL MANUFACTURING PROCESS ================= */}
+{/* ================= ROYAL MANUFACTURING PROCESS ================= */}
+<section className="py-24 px-6 md:px-20 bg-gradient-to-b from-white via-[#FDF8F3] to-white">
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {[
-            "Fabric Selection",
-            "Designing & Pattern Making",
-            "Printing & Dyeing",
-            "Embroidery & Kari Work",
-            "Quality Inspection",
-            "Packaging & Distribution"
-          ].map((step, i) => (
-            <div key={i} className="p-6 rounded-xl bg-[#F8F1EA] gold-frame">
-              {step}
-            </div>
-          ))}
+  <div className="text-center mb-20">
+    <h2 className="text-5xl font-serif text-[#7A1C2E] tracking-wide">
+      Our Manufacturing Process
+    </h2>
+    <div className="w-28 h-[2px] bg-gradient-to-r from-transparent via-[#C6A75E] to-transparent mx-auto mt-4"></div>
+  </div>
+
+  <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+
+    {[
+      {
+        title: "Fabric Selection",
+        desc: "Premium silk and handpicked fabrics sourced from trusted artisans.",
+        img: "/images/fabric.jpg"
+      },
+      {
+        title: "Design & Pattern Making",
+        desc: "Intricate motifs crafted by skilled designers.",
+        img: "/images/design.jpg"
+      },
+      {
+        title: "Printing & Dyeing",
+        desc: "Rich colors infused using traditional techniques.",
+        img: "/images/dye.jpg"
+      },
+      {
+        title: "Embroidery & Kari Work",
+        desc: "Hand-done zari and detailed thread work.",
+        img: "/images/embroidery.jpg"
+      },
+      {
+        title: "Quality Inspection",
+        desc: "Each saree carefully inspected for perfection.",
+        img: "/images/quality.jpg"
+      },
+      {
+        title: "Packaging & Distribution",
+        desc: "Elegantly packed and delivered with care.",
+        img: "/images/packaging.jpg"
+      }
+    ].map((step, index) => (
+      <div
+        key={index}
+        className="relative group overflow-hidden rounded-3xl shadow-xl border border-[#F1E4D8] cursor-pointer"
+      >
+
+        {/* Image Layer */}
+        <div className="absolute inset-0 translate-y-[-100%] group-hover:translate-y-0 transition-all duration-700 ease-in-out">
+          <img
+            src={step.img}
+            alt={step.title}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
         </div>
-      </section>
 
-      {/* ================= WHY RETAILERS CHOOSE US ================= */}
-      <section className="py-20 px-6 md:px-20 bg-[#FDF8F3] text-center">
-        <h2 className="text-4xl font-serif shimmer mb-10">Why Retailers Choose Us</h2>
-        <div className="w-32 gold-divider mx-auto mb-14"></div>
+        {/* Content Layer */}
+        <div className="relative bg-white p-10 h-72 flex flex-col justify-center transition duration-500 group-hover:text-white">
+          <h3 className="text-2xl font-serif text-[#7A1C2E] group-hover:text-white transition duration-500">
+            {step.title}
+          </h3>
 
-        <div className="grid md:grid-cols-5 gap-6 text-sm">
-          {[
-            "Bulk Manufacturing Capability",
-            "Fast Dispatch",
-            "Competitive Wholesale Pricing",
-            "Custom Design Orders",
-            "Strong Distribution Network"
-          ].map((point, i) => (
-            <div key={i} className="p-6 bg-white rounded-xl gold-frame">
-              {point}
-            </div>
-          ))}
+          <p className="text-gray-600 mt-4 text-sm leading-relaxed group-hover:text-gray-200 transition duration-500">
+            {step.desc}
+          </p>
+
+          <div className="w-16 h-[2px] bg-[#C6A75E] mt-6 group-hover:bg-white transition-all duration-500"></div>
         </div>
-      </section>
+
+      </div>
+    ))}
+
+  </div>
+</section>
+
+     {/* ================= WHY RETAILERS CHOOSE US ================= */}
+<section className="relative py-24 px-6 md:px-20 bg-gradient-to-br from-[#7A1C2E] via-[#5C1324] to-[#7A1C2E] text-white overflow-hidden">
+
+  {/* Decorative Glow */}
+  <div className="absolute top-0 left-0 w-72 h-72 bg-[#C6A75E]/20 blur-3xl rounded-full"></div>
+  <div className="absolute bottom-0 right-0 w-72 h-72 bg-[#C6A75E]/20 blur-3xl rounded-full"></div>
+
+  {/* Heading */}
+  <div className="text-center mb-20 relative">
+    <h2 className="text-5xl font-serif tracking-wide">
+      Why Retailers Choose Us
+    </h2>
+    <div className="w-28 h-[2px] bg-gradient-to-r from-transparent via-[#C6A75E] to-transparent mx-auto mt-4"></div>
+    <p className="mt-4 text-gray-200 italic max-w-2xl mx-auto">
+      Trusted by hundreds of partners across India for quality, scale & reliability.
+    </p>
+  </div>
+
+  {/* Cards */}
+  <div className="grid md:grid-cols-5 gap-10 relative max-w-7xl mx-auto">
+
+    {[
+      { title: "Bulk Manufacturing", desc: "High-volume production capacity with consistent quality." },
+      { title: "Fast Dispatch", desc: "Quick turnaround time to meet market demand." },
+      { title: "Wholesale Pricing", desc: "Competitive margins ensuring retailer profitability." },
+      { title: "Custom Orders", desc: "Exclusive designs tailored to your business needs." },
+      { title: "Strong Distribution", desc: "Wide network ensuring seamless delivery nationwide." }
+    ].map((item, index) => (
+      <div
+        key={index}
+        className="group relative bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-3xl hover:bg-white hover:text-[#7A1C2E] transition duration-500 shadow-xl"
+      >
+
+        {/* Icon Circle */}
+        <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#C6A75E] to-[#E5C97A] flex items-center justify-center text-[#7A1C2E] font-bold text-xl shadow-lg group-hover:scale-110 transition duration-500">
+          {index + 1}
+        </div>
+
+        {/* Title */}
+        <h3 className="text-lg font-serif mb-4">
+          {item.title}
+        </h3>
+
+        {/* Description */}
+        <p className="text-sm opacity-90 group-hover:opacity-100 transition">
+          {item.desc}
+        </p>
+
+        {/* Bottom Accent Line */}
+        <div className="w-10 h-[2px] bg-[#C6A75E] mx-auto mt-6 group-hover:w-20 transition-all duration-500"></div>
+
+      </div>
+    ))}
+
+  </div>
+</section>
 
       {/* ================= TESTIMONIALS ================= */}
       <section className="py-20 px-6 md:px-20 bg-white text-center">
