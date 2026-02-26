@@ -55,7 +55,7 @@ const About = () => {
       `}</style>
 
       {/* ================= HERO ================= */}
-      <div className="py-24 text-center relative zari-bg">
+      <div className="py-16 text-center relative zari-bg">
         <h1 className="text-5xl font-serif shimmer mb-6">
           Maa Kripa Trends
         </h1>
@@ -63,10 +63,12 @@ const About = () => {
         <p className="max-w-3xl mx-auto text-gray-600">
           Weaving Tradition • Designing Elegance • Delivering Excellence Since 2005
         </p>
+       
+    
       </div>
 
       {/* ================= SHOWCASE SECTION ================= */}
-<section className="py-20 px-6 md:px-20 bg-white text-center">
+<section className="py-16 px-6 md:px-20 bg-white text-center">
   <h2 className="text-4xl font-serif shimmer mb-6">
     Elegance in Every Drape
   </h2>
@@ -74,10 +76,9 @@ const About = () => {
 
   <div className="relative max-w-6xl mx-auto">
     <img
-      src={assets.saree_showcase_img}
+      src={assets.about}
       alt="Saree Showcase"
       className="rounded-3xl shadow-2xl w-full object-cover"
-      data-aos="zoom-in"
     />
 
     {/* Overlay Text */}
@@ -102,7 +103,7 @@ const About = () => {
         <div className="grid md:grid-cols-3 gap-10">
           {[
             { img: assets.awards1, title: "Best Textile Innovation", year: "2022" },
-            { img: assets.award2, title: "Excellence in Saree Manufacturing", year: "2023" },
+            { img: assets.awards2, title: "Excellence in Saree Manufacturing", year: "2023" },
             { img: assets.award3, title: "Top Wholesale Saree Brand", year: "2024" }
           ].map((award, i) => (
             <div key={i} className="p-6 rounded-2xl gold-frame bg-[#F8F1EA] hover:shadow-2xl transition">

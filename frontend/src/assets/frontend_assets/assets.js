@@ -75,6 +75,7 @@ import stripe_logo from './stripe_logo.png'
 import cross_icon from './cross_icon.png'
 
 import awards1 from './awards1.png'
+import awards2 from './awards2.png'
 import about from './about.png'
 
 export const assets = {
@@ -97,6 +98,7 @@ export const assets = {
     stripe_logo,
     cross_icon,
     awards1,
+    awards2,
     about
 }
 

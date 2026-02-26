@@ -3,6 +3,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import ProductItem from './ProductItem'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { Link } from 'react-router-dom'
 
 const BestSeller = () => {
 
@@ -114,6 +115,7 @@ const BestSeller = () => {
 
       {/* 🪔 Button Section */}
       <div className="text-center mt-20" data-aos="fade-up">
+        <Link to='/collection'>
         <button className="px-10 py-3 
                            bg-gradient-to-r 
                            from-[#8B1E3F] 
@@ -127,6 +129,7 @@ const BestSeller = () => {
                            shadow-lg hover:shadow-2xl">
           Explore All Collections
         </button>
+        </Link>
       </div>
 
     </div>

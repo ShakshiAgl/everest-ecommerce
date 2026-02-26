@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
+import ScrollToTop from "./ScrollToTop";
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Collection from './pages/Collection';
@@ -16,6 +17,7 @@ import Orders from './pages/Orders';
 import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 import { ToastContainer } from 'react-toastify';
+import ScrollToTop from "./components/ScrollToTop";
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
@@ -32,6 +34,7 @@ function App() {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
       <ToastContainer />
+      <ScrollToTop />
       <Navbar />
       <SearchBar />
       <Routes>
