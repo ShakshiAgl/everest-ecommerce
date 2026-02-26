@@ -12,11 +12,11 @@ const Hero = () => {
 
       {/* Content */}
       <div
-        className="relative z-10 text-center px-6 sm:px-12"
+        className="relative z-10 text-center px-6 sm:px-12 pt-32"
         data-aos="fade-up"
       >
         <p className="text-red-200 tracking-[4px] uppercase text-lg mb-6">
-          Maa Kripa Trendz Pvt Ltd
+          Maa Kripa Trendz 
         </p>
 
         <h1 className="prata-regular text-4xl sm:text-6xl lg:text-5xl text-white leading-tight drop-shadow-lg">

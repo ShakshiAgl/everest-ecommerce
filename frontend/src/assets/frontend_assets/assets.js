@@ -79,6 +79,7 @@ import about from './about.png'
 import kari_work_img from './kari_work_img.png'
 import india_map from './india_map.png'
 import fabric_img from './fabric_img.png'
+import about_4 from './about_4.png'
 
 export const assets = {
     logo,
@@ -104,7 +105,8 @@ export const assets = {
     about,
     kari_work_img,
     india_map,
-    fabric_img
+    fabric_img,
+    about_4
 }
 
 // export const products = [

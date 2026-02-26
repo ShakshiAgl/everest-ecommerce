@@ -76,7 +76,7 @@ const About = () => {
 
   <div className="relative max-w-6xl mx-auto">
     <img
-      src={assets.about}
+      src={assets.about_4}
       alt="Saree Showcase"
       className="rounded-3xl shadow-2xl w-full object-cover"
     />
