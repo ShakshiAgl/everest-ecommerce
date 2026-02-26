@@ -1,12 +1,17 @@
-import mongoose from 'mongoose';
+import mongoose from 'mongoose'
 
 const connectDB = async () => {
-  mongoose.connection.on('connected', () => {
-     console.log("DB Connected ");
-     
-  })
-  await mongoose.connect(`${process.env.MONGODB_URI}/e-commerce`)
+  try {
+    const uri = process.env.MONGO_URI
+    if (!uri) throw new Error('MONGO_URI not found in .env')
 
+    // Connect to MongoDB
+    await mongoose.connect(uri)
+    console.log('MongoDB connected successfully')
+  } catch (error) {
+    console.error('MongoDB connection error:', error)
+    process.exit(1)
+  }
 }
 
 export default connectDB

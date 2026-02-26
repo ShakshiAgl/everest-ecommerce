@@ -9,20 +9,23 @@ import productRouter from './routes/productRoute.js'
 // App Config
 const app = express()
 const port = process.env.PORT || 4000
+
+// Connect services
 connectDB()
 connectCloudinary()
 
-// middlewares
+// Middlewares
 app.use(express.json())
 app.use(cors())
 
-// api endpoints
+// API Endpoints
 app.use('/api/user', userRouter)
 app.use('/api/product', productRouter)
 
-app.get('/',(req,res)=>{
-   res.send("API Working")
+app.get('/', (req, res) => {
+  res.send('API Working')
 })
 
-
-app.listen(port, ()=> console.log('Server started on PORT : '+port))
+// Start server
+// Start server
+app.listen(port, '0.0.0.0', () => console.log(`Server started on PORT: ${port}`))
