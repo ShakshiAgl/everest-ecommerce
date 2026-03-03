@@ -246,7 +246,13 @@ const Collection = () => {
 
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
           {filterProducts.map((item,idx)=>(
-            <ProductItem key={idx} name={item.name} id={item._id} price={item.price} image={item.image}/>
+                <ProductItem 
+                    key={item._id}
+                    _id={item._id}
+                    name={item.name}
+                    price={item.price}
+                    image={item.image}
+      />
           ))}
         </div>
       </div>
